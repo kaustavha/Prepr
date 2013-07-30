@@ -113,3 +113,124 @@ h1 {
     animation:fade 3000ms infinite;
     -webkit-animation:fade 3000ms infinite;
 }
+
+
+
+
+/* start custom css */
+.hide{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}
+legend{
+    width: 250% !important;
+}
+
+/*CSS for Dashboard */
+/* wrapper for dashboard iframe */
+.dashboard{
+ width:600px;
+ padding-bottom: 15px;
+ height:100%;
+}
+/* dashboard iframe */
+#dashboard{
+   width: 480px;
+   height: 100%;
+   padding-left:80px;
+   margin-top:250px;
+   -webkit-transform:scale(1.5, 1.5);
+    transform:scale(1.5, 1.5);
+}
+
+/* CSS for frames rendered on local/dual scanning mode */
+#frame1{
+    width: 100%;
+    height: 100%;    
+}
+#frame2{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+#remoteView{
+    width: 100%;
+    height: 50%;
+    position: absolute; 
+}
+#localView{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    margin-top: 50%;
+}
+
+/*CSS for history page */
+.datesHist{
+    margin-top: -1%;
+    position: absolute;
+    font-size: 25px;
+    width: 50%;
+    height:70%;
+    color:grey;
+}
+.itemsHist{
+    margin-top: -1%;
+    font-size: 25px;
+    margin-left: 50%;
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    color:black;
+}
+
+/* CSS for text input fields and buttons --
+Applicable in login page and scan page*/
+#username{  
+    padding:4%;
+    font-size: 25px;
+}
+#password{
+    padding:4%;
+    font-size: 25px;
+}
+#name{
+    padding:4%;
+    font-size: 30px;
+}
+#scan {
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%
+}
+#validate{
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%
+}
+div.ui-input-text {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*CSS for footer and header, fixes for initially broken bits, font and area size increase and sticking footer to bottom */
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%; font-size: 40px !important;}  
+.ui-navbar li .ui-btn .ui-btn-inner {   
+    font-size: 40px !important;
+    border: 1px solid black;
+}
+.ui-field-contain .ui-controlgroup-controls{
+    width: 50% !important;
+    padding-left: 28% !important;
+}
+.ui-btn-text {
+    font-size:20px;
+}
+.ui-header>.ui-btn, .ui-footer>.ui-btn {
+    margin-top: 20px !important;
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+    font-size: 35px !important;
+}

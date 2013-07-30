@@ -26,7 +26,7 @@
             </intent-filter>
         </activity>
        
-       
+    
      
      <!-- ZXing activities -->
 <activity android:name="com.google.zxing.client.android.CaptureActivity"

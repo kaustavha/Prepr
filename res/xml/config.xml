@@ -1,11 +1,11 @@
 <?xml version='1.0' encoding='utf-8'?>
 <widget id="io.cordova.helloCordova" version="2.0.0" xmlns="http://www.w3.org/ns/widgets">
-    <name>Hello Cordova</name>
+    <name>Prepr</name>
     <description>
-        A sample Apache Cordova application that responds to the deviceready event.
+        Prepr Barcode scanner, gamification and dashboard application
     </description>
-    <author email="dev@cordova.apache.org" href="http://cordova.io">
-        Apache Cordova Team
+    <author email="kaustav_2007@hotmail.com" href="http://kaustav.me">
+        Kaustav Haldar
     </author>
     <access origin="*" />
     <content src="index.html" />
@@ -70,5 +70,6 @@
     <plugins>
       <plugin name="BarcodeScanner" value="com.phonegap.plugins.barcodescanner.BarcodeScanner"/>
         <plugin name="InAppBrowser" value="org.apache.cordova.InAppBrowser" />
+        <plugin name="Storage" value="org.apache.cordova.Storage" />       
     </plugins>
 </widget>
