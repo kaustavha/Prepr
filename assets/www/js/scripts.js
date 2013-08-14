@@ -13,7 +13,7 @@ $(document).bind("mobileinit", function(){
 
 //Login function
 function  validate(){
-	loading("login");
+	loading("login", 0);
 	var username = $("#username").val();
 	var password =  $("#password").val();
 
@@ -30,12 +30,14 @@ function  validate(){
    success : function(data) {
    //success code
    var login = (data.login);
-   if (login == "success") {
+   if (login == "success") {   	
    	$.mobile.changePage( "index.html#one", { transition: "slideup", changeHash: true });
+   	loading("login", 1);
    }
    else
    {
    	alert("Please check your username and password.");
+   	loading("login", 1);
    }
 }
 });
@@ -100,16 +102,15 @@ function dash() {
 
 }   
 //Loading Spinner  
-function loading(ele) {
+function loading(ele, num) {
+var timeOut = num;
 
 	if (ele == "localView"){
 		var top = 200,
-		timeOut = 15000;
 		left = 240;
 	}
 	else{
 		var top = 'auto',
-		timeOut = 15000;
 		left = 'auto';
 	}
 
@@ -132,12 +133,14 @@ function loading(ele) {
   left: left // Left position relative to parent in px
 };
 
-var target = document.getElementById(ele);
-var spinner = new Spinner(opts).spin(target);
-switch (timeOut)
+
+	switch (timeOut)
 {
-	case 0:
-	break;
+	case 0:	
+	var target = document.getElementById(ele);
+    var spinner = new Spinner(opts).spin(target);	
+	case 1:	
+	spinner.stop();
 	case 15000:
 	setTimeout(function() {
 		spinner.stop();
@@ -167,6 +170,19 @@ function scan() {
 			}
 			);
 		}
+		else if (choice == "non-prepr") 
+		{
+			window.plugins.barcodeScanner.scan( function(result) {
+		    addHist(result.text);
+		    $('#scanText').html('');
+		    $('#scanText').prepend('<p>'+result.text+'</p>');
+		    $( "#popupScan" ).popup( "open" );
+		}, 
+			function(error) {
+				alert("Scanning failed: " + error);
+			}
+			);
+		}
 		else
 		{  		
 			var serverFrame = server+"/"+name;
@@ -179,7 +195,8 @@ function scan() {
 				addHist(result.text);
 				var localFrame = server+"/"+name+"/item/"+result.text;
 				$.mobile.changePage( "index.html#scanResults", { transition: "slideup", changeHash: true });
-				loading("localView");
+				$("#remoteView").remove();
+				loading("localView", 15000);
 				setTimeout(function() {
 					iframe(localFrame, "frame2", "#localView");
 
@@ -194,7 +211,22 @@ function(error) {
 	}
 	else 
 	{
+		if (choice == "non-prepr") 
+		{
+			window.plugins.barcodeScanner.scan( function(result) {
+		    addHist(result.text);
+		    $('#scanText').html('');
+		    $('#scanText').prepend('<p>'+result.text+'</p>');
+		    $( "#popupScan" ).popup( "open" );
+		}, 
+			function(error) {
+				alert("Scanning failed: " + error);
+			}
+			);
+		}
+		else{
 		alert("Please enter a name");  	
-  	//If no name is entered, prompt
+  	//If no name is entered and choice != non-prepr, prompt
+  }
   }
 }

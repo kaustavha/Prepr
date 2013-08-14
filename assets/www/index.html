@@ -55,8 +55,9 @@
     </label>
     <input type="text" placeholder="Username" name="username" id="username" value=""  />
     <input type="password" placeholder="Password" name="password" id="password" value=""  />
-     <a href="" onclick="validate();" id="validate" data-role="button">Validate</a>  
-   
+    <a id="passRecovery" href="http://staging.baryons.net/prepr_new/user/password">Forgot Password</a>  
+     <a href="" onclick="validate();" id="validate" data-role="button">Login</a>  
+   <a href="http://staging.baryons.net/prepr_new/user/register"  id="loginOps" data-role="button">Register</a>  
      </div>
 
       <div data-role="footer">
@@ -70,7 +71,7 @@
   <div data-role="page" id="one" data-theme="a">
 
     <div data-role="header">
-      <h1>Scan</h1>
+      <h1>Scan</h1>    
     </div><!-- /header -->
 
     <div data-role="content">  
@@ -88,10 +89,16 @@
 
         <input type="radio" name="radio-choice" id="radio-choice-3" value="Dual"  />
         <label for="radio-choice-3">Dual</label>
+           <input type="radio" name="radio-choice" id="radio-choice-4" value="non-prepr"  />
+        <label for="radio-choice-4">Non-Prepr QR</label>
       </fieldset>
     </div>
-    <a onclick="scan();" id="scan" data-role="button">SCAN</a>     
-  
+    <a onclick="scan();" id="scan" data-role="button">SCAN</a>   
+
+  <div data-role="popup" id="popupScan">
+  <p>DATA SCANNED:<p>
+    <div id="scanText"></div>
+</div>
   </div><!-- /content -->
 
   <div data-role="footer">

@@ -144,7 +144,7 @@ legend{
     transform:scale(1.5, 1.5);
 }
 
-/* CSS for frames rendered on local/dual scanning mode */
+/* CSS for frames rendered on scanning  */
 #frame1{
     width: 100%;
     height: 100%;    
@@ -164,6 +164,9 @@ legend{
     height: 50%;
     position: absolute;
     margin-top: 50%;
+}
+#scanText{
+    font-size:40px;
 }
 
 /*CSS for history page */
@@ -205,9 +208,25 @@ Applicable in login page and scan page*/
     padding-bottom: 3%
 }
 #validate{
+    position: absolute;
     margin-top: 5%;
     padding-top: 3%;
-    padding-bottom: 3%
+    padding-bottom: 3%;
+    width:45%;
+    margin-right: -5%;
+}
+
+#loginOps{
+    font-size: 10px;
+    position: absolute;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width:45%;
+    margin-left: 50%;
+}
+#passRecovery{
+    font-size: 40px;
 }
 div.ui-input-text {
     margin-top: 5%;
