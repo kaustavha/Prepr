@@ -1,0 +1,306 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'cordova@2.9.0' ]
+2 info using npm@1.2.0
+3 info using node@v0.8.17
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose read json C:\Users\Ronnie\AppData\Roaming\npm\package.json
+6 verbose read json C:\Users\Ronnie\AppData\Roaming\npm\package.json
+7 verbose cache add [ 'cordova@2.9.0', null ]
+8 silly cache add name=undefined spec="cordova@2.9.0" args=["cordova@2.9.0",null]
+9 verbose parsed url { pathname: 'cordova@2.9.0',
+9 verbose parsed url   path: 'cordova@2.9.0',
+9 verbose parsed url   href: 'cordova@2.9.0' }
+10 silly cache add name="cordova" spec="2.9.0" args=["cordova","2.9.0"]
+11 verbose parsed url { pathname: '2.9.0', path: '2.9.0', href: '2.9.0' }
+12 verbose addNamed [ 'cordova', '2.9.0' ]
+13 verbose addNamed [ '2.9.0', '2.9.0' ]
+14 silly lockFile fa92535a-cordova-2-9-0 cordova@2.9.0
+15 verbose lock cordova@2.9.0 C:\Users\Ronnie\AppData\Roaming\npm-cache\fa92535a-cordova-2-9-0.lock
+16 verbose url raw cordova/2.9.0
+17 verbose url resolving [ 'https://registry.npmjs.org/', './cordova/2.9.0' ]
+18 verbose url resolved https://registry.npmjs.org/cordova/2.9.0
+19 info trying registry request attempt 1 at 17:23:15
+20 http GET https://registry.npmjs.org/cordova/2.9.0
+21 http 200 https://registry.npmjs.org/cordova/2.9.0
+22 silly registry.get cb [ 200,
+22 silly registry.get   { vary: 'Accept',
+22 silly registry.get     server: 'CouchDB/1.3.0 (Erlang OTP/R15B03)',
+22 silly registry.get     etag: '"YJ64CVLU4AUF5HVIIU5KTA8B"',
+22 silly registry.get     date: 'Mon, 01 Jul 2013 21:23:19 GMT',
+22 silly registry.get     'content-type': 'application/json',
+22 silly registry.get     'content-length': '12077' } ]
+23 silly lockFile 2186f268-js-org-cordova-cordova-2-9-0-tgz https://registry.npmjs.org/cordova/-/cordova-2.9.0.tgz
+24 verbose lock https://registry.npmjs.org/cordova/-/cordova-2.9.0.tgz C:\Users\Ronnie\AppData\Roaming\npm-cache\2186f268-js-org-cordova-cordova-2-9-0-tgz.lock
+25 verbose addRemoteTarball [ 'https://registry.npmjs.org/cordova/-/cordova-2.9.0.tgz',
+25 verbose addRemoteTarball   '0c9a478a43eff7582b3da8d727926bd1cf1d24ba' ]
+26 info retry fetch attempt 1 at 17:23:17
+27 verbose fetch to= C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\tmp.tgz
+28 http GET https://registry.npmjs.org/cordova/-/cordova-2.9.0.tgz
+29 http 200 https://registry.npmjs.org/cordova/-/cordova-2.9.0.tgz
+30 silly shasum updated bytes 40960
+31 silly shasum updated bytes 3339
+32 info shasum 0c9a478a43eff7582b3da8d727926bd1cf1d24ba
+32 info shasum C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\tmp.tgz
+33 verbose tar unpack C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\tmp.tgz
+34 silly lockFile ac10e2c7-7441-0-11556191951967776-package C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\package
+35 verbose lock C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\package C:\Users\Ronnie\AppData\Roaming\npm-cache\ac10e2c7-7441-0-11556191951967776-package.lock
+36 silly gunzTarPerm modes [ '755', '644' ]
+37 silly gunzTarPerm extractEntry package.json
+38 silly gunzTarPerm extractEntry .npmignore
+39 silly gunzTarPerm extractEntry README.md
+40 silly gunzTarPerm extractEntry cordova.js
+41 silly gunzTarPerm extractEntry platforms.js
+42 silly gunzTarPerm extractEntry templates/config.xml
+43 silly gunzTarPerm extractEntry .reviewboardrc
+44 silly gunzTarPerm extractEntry VERSION
+45 silly gunzTarPerm extractEntry bin/cordova
+46 silly gunzTarPerm extractEntry spec/build.spec.js
+47 silly gunzTarPerm extractEntry spec/emulate.spec.js
+48 silly gunzTarPerm extractEntry spec/help.spec.js
+49 silly gunzTarPerm extractEntry spec/helper.js
+50 silly gunzTarPerm extractEntry spec/hooker.spec.js
+51 silly gunzTarPerm extractEntry spec/create.spec.js
+52 silly gunzTarPerm extractEntry spec/serve.spec.js
+53 silly gunzTarPerm extractEntry spec/platform.spec.js
+54 silly gunzTarPerm extractEntry spec/plugin.spec.js
+55 silly gunzTarPerm extractEntry spec/plugin_parser.spec.js
+56 silly gunzTarPerm extractEntry spec/prepare.spec.js
+57 silly gunzTarPerm extractEntry spec/config_parser.spec.js
+58 silly gunzTarPerm extractEntry spec/run.spec.js
+59 silly gunzTarPerm extractEntry spec/compile.spec.js
+60 silly gunzTarPerm extractEntry spec/util.spec.js
+61 silly gunzTarPerm extractEntry spec/lazy_load.spec.js
+62 silly gunzTarPerm extractEntry spec/metadata/android_parser.spec.js
+63 silly gunzTarPerm extractEntry spec/metadata/blackberry_parser.spec.js
+64 silly gunzTarPerm extractEntry spec/metadata/ios_parser.spec.js
+65 silly gunzTarPerm extractEntry spec/metadata/wp7_parser.spec.js
+66 silly gunzTarPerm extractEntry spec/metadata/wp8_parser.spec.js
+67 silly gunzTarPerm extractEntry src/build.js
+68 silly gunzTarPerm extractEntry src/emulate.js
+69 silly gunzTarPerm extractEntry src/events.js
+70 silly gunzTarPerm extractEntry src/help.js
+71 silly gunzTarPerm extractEntry src/hooker.js
+72 silly gunzTarPerm extractEntry src/create.js
+73 silly gunzTarPerm extractEntry src/serve.js
+74 silly gunzTarPerm extractEntry src/platform.js
+75 silly gunzTarPerm extractEntry src/plugin.js
+76 silly gunzTarPerm extractEntry src/plugin_parser.js
+77 silly gunzTarPerm extractEntry src/prepare.js
+78 silly gunzTarPerm extractEntry src/config_parser.js
+79 silly gunzTarPerm extractEntry src/ripple.js
+80 silly gunzTarPerm extractEntry src/config.js
+81 silly gunzTarPerm extractEntry src/run.js
+82 silly gunzTarPerm extractEntry src/compile.js
+83 silly gunzTarPerm extractEntry src/util.js
+84 silly gunzTarPerm extractEntry src/lazy_load.js
+85 silly gunzTarPerm extractEntry src/metadata/android_parser.js
+86 silly gunzTarPerm extractEntry src/metadata/blackberry_parser.js
+87 silly gunzTarPerm extractEntry src/metadata/ios_parser.js
+88 silly gunzTarPerm extractEntry src/metadata/wp7_parser.js
+89 silly gunzTarPerm extractEntry src/metadata/wp8_parser.js
+90 silly gunzTarPerm extractEntry doc/help.txt
+91 verbose read json C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\package\package.json
+92 silly lockFile ac10e2c7-7441-0-11556191951967776-package C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\package
+93 verbose from cache C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\package\package.json
+94 verbose tar pack [ 'C:\\Users\\Ronnie\\AppData\\Roaming\\npm-cache\\cordova\\2.9.0\\package.tgz',
+94 verbose tar pack   'C:\\Users\\Ronnie\\AppData\\Local\\Temp\\npm-2348\\1372713797441-0.11556191951967776\\package' ]
+95 verbose tarball C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz
+96 verbose folder C:\Users\Ronnie\AppData\Local\Temp\npm-2348\1372713797441-0.11556191951967776\package
+97 silly lockFile 2781c5f6--cache-cordova-2-9-0-package-tgz C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz
+98 verbose lock C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz C:\Users\Ronnie\AppData\Roaming\npm-cache\2781c5f6--cache-cordova-2-9-0-package-tgz.lock
+99 silly lockFile 2781c5f6--cache-cordova-2-9-0-package-tgz C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz
+100 silly lockFile 77c7159d--npm-cache-cordova-2-9-0-package C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package
+101 verbose lock C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package C:\Users\Ronnie\AppData\Roaming\npm-cache\77c7159d--npm-cache-cordova-2-9-0-package.lock
+102 silly lockFile 77c7159d--npm-cache-cordova-2-9-0-package C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package
+103 verbose tar unpack C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz
+104 silly lockFile 77c7159d--npm-cache-cordova-2-9-0-package C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package
+105 verbose lock C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package C:\Users\Ronnie\AppData\Roaming\npm-cache\77c7159d--npm-cache-cordova-2-9-0-package.lock
+106 silly gunzTarPerm modes [ '755', '644' ]
+107 silly gunzTarPerm extractEntry package.json
+108 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+109 silly gunzTarPerm extractEntry .npmignore
+110 silly gunzTarPerm modified mode [ '.npmignore', 438, 420 ]
+111 silly gunzTarPerm extractEntry README.md
+112 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+113 silly gunzTarPerm extractEntry cordova.js
+114 silly gunzTarPerm modified mode [ 'cordova.js', 438, 420 ]
+115 silly gunzTarPerm extractEntry platforms.js
+116 silly gunzTarPerm modified mode [ 'platforms.js', 438, 420 ]
+117 silly gunzTarPerm extractEntry doc/help.txt
+118 silly gunzTarPerm modified mode [ 'doc/help.txt', 438, 420 ]
+119 silly gunzTarPerm extractEntry .reviewboardrc
+120 silly gunzTarPerm modified mode [ '.reviewboardrc', 438, 420 ]
+121 silly gunzTarPerm extractEntry bin/cordova
+122 silly gunzTarPerm modified mode [ 'bin/cordova', 438, 420 ]
+123 silly gunzTarPerm extractEntry spec/build.spec.js
+124 silly gunzTarPerm modified mode [ 'spec/build.spec.js', 438, 420 ]
+125 silly gunzTarPerm extractEntry spec/emulate.spec.js
+126 silly gunzTarPerm modified mode [ 'spec/emulate.spec.js', 438, 420 ]
+127 silly gunzTarPerm extractEntry spec/help.spec.js
+128 silly gunzTarPerm modified mode [ 'spec/help.spec.js', 438, 420 ]
+129 silly gunzTarPerm extractEntry spec/helper.js
+130 silly gunzTarPerm modified mode [ 'spec/helper.js', 438, 420 ]
+131 silly gunzTarPerm extractEntry spec/hooker.spec.js
+132 silly gunzTarPerm modified mode [ 'spec/hooker.spec.js', 438, 420 ]
+133 silly gunzTarPerm extractEntry spec/create.spec.js
+134 silly gunzTarPerm modified mode [ 'spec/create.spec.js', 438, 420 ]
+135 silly gunzTarPerm extractEntry spec/serve.spec.js
+136 silly gunzTarPerm modified mode [ 'spec/serve.spec.js', 438, 420 ]
+137 silly gunzTarPerm extractEntry spec/platform.spec.js
+138 silly gunzTarPerm modified mode [ 'spec/platform.spec.js', 438, 420 ]
+139 silly gunzTarPerm extractEntry spec/plugin.spec.js
+140 silly gunzTarPerm modified mode [ 'spec/plugin.spec.js', 438, 420 ]
+141 silly gunzTarPerm extractEntry spec/plugin_parser.spec.js
+142 silly gunzTarPerm modified mode [ 'spec/plugin_parser.spec.js', 438, 420 ]
+143 silly gunzTarPerm extractEntry spec/prepare.spec.js
+144 silly gunzTarPerm modified mode [ 'spec/prepare.spec.js', 438, 420 ]
+145 silly gunzTarPerm extractEntry spec/config_parser.spec.js
+146 silly gunzTarPerm modified mode [ 'spec/config_parser.spec.js', 438, 420 ]
+147 silly gunzTarPerm extractEntry spec/run.spec.js
+148 silly gunzTarPerm modified mode [ 'spec/run.spec.js', 438, 420 ]
+149 silly gunzTarPerm extractEntry spec/compile.spec.js
+150 silly gunzTarPerm modified mode [ 'spec/compile.spec.js', 438, 420 ]
+151 silly gunzTarPerm extractEntry spec/util.spec.js
+152 silly gunzTarPerm modified mode [ 'spec/util.spec.js', 438, 420 ]
+153 silly gunzTarPerm extractEntry spec/lazy_load.spec.js
+154 silly gunzTarPerm modified mode [ 'spec/lazy_load.spec.js', 438, 420 ]
+155 silly gunzTarPerm extractEntry spec/metadata/android_parser.spec.js
+156 silly gunzTarPerm modified mode [ 'spec/metadata/android_parser.spec.js', 438, 420 ]
+157 silly gunzTarPerm extractEntry spec/metadata/blackberry_parser.spec.js
+158 silly gunzTarPerm modified mode [ 'spec/metadata/blackberry_parser.spec.js', 438, 420 ]
+159 silly gunzTarPerm extractEntry spec/metadata/ios_parser.spec.js
+160 silly gunzTarPerm modified mode [ 'spec/metadata/ios_parser.spec.js', 438, 420 ]
+161 silly gunzTarPerm extractEntry spec/metadata/wp7_parser.spec.js
+162 silly gunzTarPerm modified mode [ 'spec/metadata/wp7_parser.spec.js', 438, 420 ]
+163 silly gunzTarPerm extractEntry spec/metadata/wp8_parser.spec.js
+164 silly gunzTarPerm modified mode [ 'spec/metadata/wp8_parser.spec.js', 438, 420 ]
+165 silly gunzTarPerm extractEntry src/build.js
+166 silly gunzTarPerm modified mode [ 'src/build.js', 438, 420 ]
+167 silly gunzTarPerm extractEntry src/emulate.js
+168 silly gunzTarPerm modified mode [ 'src/emulate.js', 438, 420 ]
+169 silly gunzTarPerm extractEntry src/events.js
+170 silly gunzTarPerm modified mode [ 'src/events.js', 438, 420 ]
+171 silly gunzTarPerm extractEntry src/help.js
+172 silly gunzTarPerm modified mode [ 'src/help.js', 438, 420 ]
+173 silly gunzTarPerm extractEntry src/hooker.js
+174 silly gunzTarPerm modified mode [ 'src/hooker.js', 438, 420 ]
+175 silly gunzTarPerm extractEntry src/create.js
+176 silly gunzTarPerm modified mode [ 'src/create.js', 438, 420 ]
+177 silly gunzTarPerm extractEntry src/serve.js
+178 silly gunzTarPerm modified mode [ 'src/serve.js', 438, 420 ]
+179 silly gunzTarPerm extractEntry src/platform.js
+180 silly gunzTarPerm modified mode [ 'src/platform.js', 438, 420 ]
+181 silly gunzTarPerm extractEntry src/plugin.js
+182 silly gunzTarPerm modified mode [ 'src/plugin.js', 438, 420 ]
+183 silly gunzTarPerm extractEntry src/plugin_parser.js
+184 silly gunzTarPerm modified mode [ 'src/plugin_parser.js', 438, 420 ]
+185 silly gunzTarPerm extractEntry src/prepare.js
+186 silly gunzTarPerm modified mode [ 'src/prepare.js', 438, 420 ]
+187 silly gunzTarPerm extractEntry src/config_parser.js
+188 silly gunzTarPerm modified mode [ 'src/config_parser.js', 438, 420 ]
+189 silly gunzTarPerm extractEntry src/ripple.js
+190 silly gunzTarPerm modified mode [ 'src/ripple.js', 438, 420 ]
+191 silly gunzTarPerm extractEntry src/config.js
+192 silly gunzTarPerm modified mode [ 'src/config.js', 438, 420 ]
+193 silly gunzTarPerm extractEntry src/run.js
+194 silly gunzTarPerm modified mode [ 'src/run.js', 438, 420 ]
+195 silly gunzTarPerm extractEntry src/compile.js
+196 silly gunzTarPerm modified mode [ 'src/compile.js', 438, 420 ]
+197 silly gunzTarPerm extractEntry src/util.js
+198 silly gunzTarPerm modified mode [ 'src/util.js', 438, 420 ]
+199 silly gunzTarPerm extractEntry src/lazy_load.js
+200 silly gunzTarPerm modified mode [ 'src/lazy_load.js', 438, 420 ]
+201 silly gunzTarPerm extractEntry src/metadata/android_parser.js
+202 silly gunzTarPerm modified mode [ 'src/metadata/android_parser.js', 438, 420 ]
+203 silly gunzTarPerm extractEntry src/metadata/blackberry_parser.js
+204 silly gunzTarPerm modified mode [ 'src/metadata/blackberry_parser.js', 438, 420 ]
+205 silly gunzTarPerm extractEntry src/metadata/ios_parser.js
+206 silly gunzTarPerm modified mode [ 'src/metadata/ios_parser.js', 438, 420 ]
+207 silly gunzTarPerm extractEntry src/metadata/wp7_parser.js
+208 silly gunzTarPerm modified mode [ 'src/metadata/wp7_parser.js', 438, 420 ]
+209 silly gunzTarPerm extractEntry src/metadata/wp8_parser.js
+210 silly gunzTarPerm modified mode [ 'src/metadata/wp8_parser.js', 438, 420 ]
+211 silly gunzTarPerm extractEntry templates/config.xml
+212 silly gunzTarPerm modified mode [ 'templates/config.xml', 438, 420 ]
+213 silly gunzTarPerm extractEntry VERSION
+214 silly gunzTarPerm modified mode [ 'VERSION', 438, 420 ]
+215 verbose read json C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package\package.json
+216 silly lockFile 77c7159d--npm-cache-cordova-2-9-0-package C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package
+217 silly shasum updated bytes 40960
+218 silly shasum updated bytes 3090
+219 info shasum 0c85ac96dc2a955b871ae50570ef55d2e749aae3
+219 info shasum C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz
+220 verbose from cache C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package\package.json
+221 verbose chmod C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz 644
+222 silly chown skipping for windows C:\Users\Ronnie\AppData\Roaming\npm-cache\cordova\2.9.0\package.tgz
+223 silly lockFile 2186f268-js-org-cordova-cordova-2-9-0-tgz https://registry.npmjs.org/cordova/-/cordova-2.9.0.tgz
+224 silly lockFile fa92535a-cordova-2-9-0 cordova@2.9.0
+225 silly resolved [ { name: 'cordova',
+225 silly resolved     version: '2.9.0',
+225 silly resolved     preferGlobal: 'true',
+225 silly resolved     description: 'Cordova command line interface tool',
+225 silly resolved     main: 'cordova',
+225 silly resolved     engines: { node: '>=0.9.9' },
+225 silly resolved     engineStrict: true,
+225 silly resolved     bin: { cordova: './bin/cordova' },
+225 silly resolved     scripts: { test: 'jasmine-node --color spec' },
+225 silly resolved     repository:
+225 silly resolved      { type: 'git',
+225 silly resolved        url: 'https://git-wip-us.apache.org/repos/asf/cordova-cli.git' },
+225 silly resolved     bugs:
+225 silly resolved      { url: 'https://issues.apache.org/jira/browse/CB',
+225 silly resolved        email: 'dev@cordova.apache.org' },
+225 silly resolved     keywords: [ 'cordova', 'client', 'cli' ],
+225 silly resolved     dependencies:
+225 silly resolved      { colors: '>=0.6.0',
+225 silly resolved        elementtree: '0.1.3',
+225 silly resolved        plugman: '0.7.14',
+225 silly resolved        plist: '0.4.x',
+225 silly resolved        xcode: '0.5.1',
+225 silly resolved        express: '3.0',
+225 silly resolved        shelljs: '0.1.2',
+225 silly resolved        ncallbacks: '1.0.0',
+225 silly resolved        request: '2.12.x',
+225 silly resolved        semver: '1.1.0',
+225 silly resolved        glob: '3.2.x',
+225 silly resolved        'follow-redirects': '0.0.x',
+225 silly resolved        prompt: '0.2.7',
+225 silly resolved        tar: '0.1.x',
+225 silly resolved        'ripple-emulator': '>=0.9.15',
+225 silly resolved        open: '0.0.3' },
+225 silly resolved     devDependencies: { 'jasmine-node': '1.8.x' },
+225 silly resolved     author: { name: 'Anis Kadri' },
+225 silly resolved     contributors:
+225 silly resolved      [ [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object],
+225 silly resolved        [Object] ],
+225 silly resolved     license: 'Apache version 2.0',
+225 silly resolved     readme: '# cordova-cli\n\n> The command line tool to build, deploy and manage [Cordova](http://cordova.io)-based applications.\n\n[Apache Cordova](http://cordova.io) allows for building native mobile applications using HTML, CSS and JavaScript. This tool helps with management of multi-platform Cordova applications as well as Cordova plugin integration.\n\nCheck out the [Getting Started guides](http://cordova.apache.org/docs/en/edge/guide_getting-started_index.md.html#Getting%20Started%20Guides) for more details on how to work with Cordova sub-projects.\n\n# Requirements\n\n* [nodejs](http://nodejs.org/)\n* SDKs for every platform you wish to support\n  - BlackBerry 10: [BlackBerry 10 WebWorks SDK](http://developer.blackberry.com/html5/download/). Make sure you have the `dependencies/tools/bin` folder inside the SDK directory added to your path!\n  - iOS: [iOS SDK](http://developer.apple.com) with the latest Xcode and Xcode Command Line Tools\n  - [Android SDK](http://developer.android.com) - **NOTE** This tool\n    will not work unless you have the absolute latest updates for all\n    Android SDK components. Also you will need the SDK\'s `tools` and `platform-tools` directories on your __system path__ otherwise Android support will fail.\n\ncordova-cli has been tested on Mas OS X, Linux, Windows 7 and Windows 8.\n\n# Install\n\n    npm install -g cordova\n\n# Getting Started\n\ncordova-cli has a single global `create` command that creates new cordova projects into a specified directory. Once you create a project, `cd` into it and you can execute a variety of project-level commands. Completely inspired by git\'s interface.\n\n## Global Command\n\n- `create <directory> [<id> [<name>]]` create a new cordova project with optional name and id (package name, reverse-domain style)\n\n<a name="project_commands" />\n## Project Commands\n\n- `platform [ls | list]` list all platforms the project will build to\n- `platform add <platform> [<platform> ...]` add one (or more) platforms as a build target for the project\n- `platform [rm | remove] <platform> [<platform> ...]` removes one (or more) platforms as a build target for the project\n- `plugin [ls | list]` list all plugins added to the project\n- `plugin add <path-to-plugin> [<path-to-plugin> ...]` add one (or more) plugins to the project\n- `plugin [rm | remove] <plugin-name> [<plugin-name> ...]` remove one (or more) added plugins\n- `prepare [platform...]` copies files into the specified platforms, or all platforms. it is then ready for building by Eclipse/Xcode/etc.\n- `compile [platform...]` compiles the app into a binary for each added platform. With no parameters, builds for all platforms, otherwise builds for the specified platforms.\n- `build [<platform> [<platform> [...]]]` an alias for `cordova prepare` followed by `cordova compile`\n- `emulate [<platform> [<platform> [...]]]` launch emulators and deploy app to them. With no parameters emulates for all platforms added to the project, otherwise emulates for the specified platforms\n- `serve <platform> [port]` launch a local web server for that platform\'s www directory on the given port (default 8000).\n\n### Optional Flags\n\n- `-d` or `--verbose` will pipe out more verbose output to your shell. You can also subscribe to `log` and `warn` events if you are consuming cordova-cli as a node module by calling `cordova.on(\'log\', function() {})` or `cordova.on(\'warn\', function() {})`.\n- `-v` or `--version` will print out the version of your cordova-cli install.\n\n# Project Directory Structure\nA Cordova application built with cordova-cli will have the following directory structure:\n\n    myApp/\n    |--.cordova/\n    |-- merges/\n    | | |-- android/\n    | | |-- blackberry/\n    | | `-- ios/\n    |-- www/\n    | `-- config.xml\n    |-- platforms/\n    | |-- android/\n    | |-- blackberry/\n    | `-- ios/\n    `-- plugins/\n\n## .cordova/\nThis directory identifies a tree as a cordova project. Simple configuration information is stored in here (such as BlackBerry environment variables).\n\nCommands other than `create` operate against the project directory itself, rather than the current directory - a search up the current directory\'s parents is made to find the project directory. Thus, any command (other than `create`) can be used from any subdirectory whose parent is a cordova project directory (same as git).\n\n## merges/\nPlatform-specific web assets (HTML, CSS and JavaScript files) are contained within appropriate subfolders in this directory. These are deployed during a `prepare` to the appropriate native directory.  Files placed under `merges/` will override matching files in the `www/` folder for the relevant platform. A quick example, assuming a project structure of:\n\n    merges/\n    |-- ios/\n    | `-- app.js\n    |-- android/\n    | `-- android.js\n    www/\n    `-- app.js\n\nAfter building the Android and iOS projects, the Android application will contain both `app.js` and `android.js`. However, the iOS application will only contain an `app.js`, and it will be the one from `merges/ios/app.js`, overriding the "common" `app.js` located inside `www/`.\n\n## www/\n\nContains the project\'s web artifacts, such as .html, .css and .js files. These are your main application assets. They will be copied on a `cordova prepare` to each platform\'s www directory.\n\n### Your Blanket: config.xml\n\nThis file is what you should be editing to modify your application\'s metadata. Any time you run any cordova-cli commands, the tool will look at the contents of `config.xml` and use all relevant info from this file to define native application information. cordova-cli supports changing your application\'s data via the following elements inside the `config.xml` file:\n\n- The user-facing name can be modified via the contents of the `<name>` element.\n- The package name (AKA bundle identifier or application id) can be modified via the `id` attribute from the top-level `<widget>` element.\n- The version can be modified via the `version` attribute from the top-level `<widget>` element.\n- The whitelist can be modified using the `<access>` elements. Make sure the `origin` attribute of your `<access>` element points to a valid URL (you can use `*` as wildcard). For more information on the whitelisting syntax, see the [docs.phonegap.com](http://docs.phonegap.com/en/2.2.0/guide_whitelist_index.md.html#Domain%20Whitelist%20Guide). You can use either attribute `uri` ([BlackBerry-proprietary](https://developer.blackberry.com/html5/documentation/access_element_834677_11.html)) or `origin` ([standards-compliant](http://www.w3.org/TR/widgets-access/#attributes)) to denote the domain.\n- Platform-specific preferences can be customized via `<preference>` tags. See [docs.phonegap.com](http://docs.phonegap.com/en/2.3.0/guide_project-settings_index.md.html#Project%20Settings) for a list of preferences you can use.\n\n## platforms/\nPlatforms added to your application will have the native application project structures laid out within this directory.\n\n## plugins/\nAny added plugins will be extracted or copied into this directory.\n\n# Hooks\n\nProjects created by cordova-cli have `before` and `after` hooks for each [project command](#project_commands).\n\nThere are two types of hooks: project-specific ones and module-level ones. Both of these types of hooks receive the project root folder as a parameter.\n\n## Project-specific Hooks\n\nThese are located under the `.cordova/hooks` directory in the root of your cordova project. Any scripts you add to these directories will be executed before and after the appropriate commands. Useful for integrating your own build systems or integrating with version control systems. __Remember__: make your scripts executable.\n\n### Examples\n\n- [`before_build` hook for jade template compiling](https://gist.github.com/4100866) courtesy of [dpogue](http://github.com/dpogue)\n\n## Module-level Hooks\n\nIf you are using cordova-cli as a module within a larger node application, you can also use the standard `EventEmitter` methods to attach to the events. The events include `before_build`, `before_compile`, `before_docs`, `before_emulate`, `before_run`, `before_platform_add`, `before_library_download`, `before_platform_ls`, `before_platform_rm`, `before_plugin_add`, `before_plugin_ls`, `before_plugin_rm` and `before_prepare`. There is also a `library_download` progress event. Additionally, there are `after_` flavours of all the above events.\n\nOnce you `require(\'cordova\')` in your node project, you will have the usual `EventEmitter` methods available (`on`, `off` or `removeListener`, `removeAllListeners`, and `emit` or `trigger`).\n\n# Examples\n\n## Creating a new cordova project\nThis example shows how to create a project from scratch named KewlApp with iOS and Android platform support, and includes a plugin named Kewlio. The project will live in ~/KewlApp\n\n    cordova create ~/KewlApp KewlApp\n    cd ~/KewlApp\n    cordova platform add ios android\n    cordova plugin add http://example.org/Kewlio-1.2.3.tar.gz\n    cordova build \n\nThe directory structure of KewlApp now looks like this:\n\n    KewlApp/\n    |-- .cordova/\n    |-- merges/\n    | |-- android/\n    | `-- ios/\n    |-- www/\n    | `-- index.html\n    |-- platforms/\n    | |-- android/\n    | | `-- …\n    | `-- ios/\n    |   `-- …\n    `-- plugins/\n      `-- Kewlio/\n\n# Contributing\n\n## Running Tests\n\n    npm test\n\n## TO-DO + Issues\n\nPlease check [Cordova issues with the CLI Component](http://issues.cordova.io). If you find issues with this tool, please be so kind as to include relevant information needed to debug issues such as:\n\n- Your operating system and version\n- The application name, directory location, and identifier used with `create`\n- Which mobile SDKs you have installed, and which version. Related to this: which Xcode version if you are submitting issues related to iOS\n- Any error stack traces you received\n\n## Contributors\n\nThanks to everyone for contributing! For a list of people involved, please see the `package.json` file.\n',
+225 silly resolved     readmeFilename: 'README.md',
+225 silly resolved     _id: 'cordova@2.9.0',
+225 silly resolved     dist: { shasum: '0c85ac96dc2a955b871ae50570ef55d2e749aae3' },
+225 silly resolved     _from: 'cordova@2.9.0' } ]
+226 info install cordova@2.9.0 into C:\Users\Ronnie\AppData\Roaming\npm
+227 info installOne cordova@2.9.0
+228 error notsup Unsupported
+228 error notsup Not compatible with your version of node/npm: cordova@2.9.0
+228 error notsup Required: {"node":">=0.9.9"}
+228 error notsup Actual:   {"npm":"1.2.0","node":"v0.8.17"}
+229 error System Windows_NT 6.1.7601
+230 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "cordova@2.9.0"
+231 error cwd C:\Prepr
+232 error node -v v0.8.17
+233 error npm -v 1.2.0
+234 error code ENOTSUP
+235 verbose exit [ 1, true ]

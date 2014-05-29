@@ -1,0 +1,255 @@
+/*
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+* {
+    -webkit-tap-highlight-color: rgba(0,0,0,0); /* make transparent link selection, adjust last value opacity 0 to 1.0 */
+}
+
+body {
+    -webkit-touch-callout: none;                /* prevent callout to copy image, etc when tap to hold */
+    -webkit-text-size-adjust: none;             /* prevent webkit from resizing text to fit */
+    -webkit-user-select: none;                  /* prevent copy paste, to allow, change 'none' to 'text' */
+    background-color:#E4E4E4;
+    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
+    background-image:-webkit-gradient(
+        linear,
+        left top,
+        left bottom,
+        color-stop(0, #A7A7A7),
+        color-stop(0.51, #E4E4E4)
+    );
+    background-attachment:fixed;
+    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
+    font-size:12px;
+    height:100%;
+    margin:0px;
+    padding:0px;
+    text-transform:uppercase;
+    width:100%;
+}
+
+/* Portrait layout (default) */
+.app {
+    background:url(../img/logo.png) no-repeat center top; /* 170px x 200px */
+    position:absolute;             /* position in the center of the screen */
+    left:50%;
+    top:50%;
+    height:50px;                   /* text area height */
+    width:225px;                   /* text area width */
+    text-align:center;
+    padding:180px 0px 0px 0px;     /* image height is 200px (bottom 20px are overlapped with text) */
+    margin:-115px 0px 0px -112px;  /* offset vertical: half of image height and text area height */
+                                   /* offset horizontal: half of text area width */
+}
+
+/* Landscape layout (with min-width) */
+@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
+    .app {
+        background-position:left center;
+        padding:75px 0px 75px 170px;  /* padding-top + padding-bottom + text area = image height */
+        margin:-90px 0px 0px -198px;  /* offset vertical: half of image height */
+                                      /* offset horizontal: half of image width and text area width */
+    }
+}
+
+h1 {
+    font-size:24px;
+    font-weight:normal;
+    margin:0px;
+    overflow:visible;
+    padding:0px;
+    text-align:center;
+}
+
+.event {
+    border-radius:4px;
+    -webkit-border-radius:4px;
+    color:#FFFFFF;
+    font-size:12px;
+    margin:0px 30px;
+    padding:2px 0px;
+}
+
+.event.listening {
+    background-color:#333333;
+    display:block;
+}
+
+.event.received {
+    background-color:#4B946A;
+    display:none;
+}
+
+@keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+@-webkit-keyframes fade {
+    from { opacity: 1.0; }
+    50% { opacity: 0.4; }
+    to { opacity: 1.0; }
+}
+ 
+.blink {
+    animation:fade 3000ms infinite;
+    -webkit-animation:fade 3000ms infinite;
+}
+
+
+
+
+/* start custom css */
+.hide{
+    opacity: 0;
+    visibility: none;
+    display: none;
+}
+legend{
+    width: 250% !important;
+}
+
+/*CSS for Dashboard */
+/* wrapper for dashboard iframe */
+.dashboard{
+ width:600px;
+ padding-bottom: 15px;
+ height:100%;
+}
+/* dashboard iframe */
+#dashboard{
+   width: 480px;
+   height: 100%;
+   padding-left:80px;
+   margin-top:250px;
+   -webkit-transform:scale(1.5, 1.5);
+    transform:scale(1.5, 1.5);
+}
+
+/* CSS for frames rendered on scanning  */
+#frame1{
+    width: 100%;
+    height: 100%;    
+}
+#frame2{
+    width: 100%;
+    height: 100%;
+    position: absolute; 
+}
+#remoteView{
+    width: 100%;
+    height: 50%;
+    position: absolute; 
+}
+#localView{
+    width: 100%;
+    height: 50%;
+    position: absolute;
+    margin-top: 50%;
+}
+#scanText{
+    font-size:40px;
+}
+
+/*CSS for history page */
+.datesHist{
+    margin-top: -1%;
+    position: absolute;
+    font-size: 25px;
+    width: 50%;
+    height:70%;
+    color:grey;
+}
+.itemsHist{
+    margin-top: -1%;
+    font-size: 25px;
+    margin-left: 50%;
+    position: absolute;
+    width: 50%;
+    height: 70%;
+    color:black;
+}
+
+/* CSS for text input fields and buttons --
+Applicable in login page and scan page*/
+#username{  
+    padding:4%;
+    font-size: 25px;
+}
+#password{
+    padding:4%;
+    font-size: 25px;
+}
+#name{
+    padding:4%;
+    font-size: 30px;
+}
+#scan {
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%
+}
+#validate{
+    position: absolute;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width:45%;
+    margin-right: -5%;
+}
+
+#loginOps{
+    font-size: 10px;
+    position: absolute;
+    margin-top: 5%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    width:45%;
+    margin-left: 50%;
+}
+#passRecovery{
+    font-size: 40px;
+}
+div.ui-input-text {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+/*CSS for footer and header, fixes for initially broken bits, font and area size increase and sticking footer to bottom */
+[data-role=page]{height: 100% !important; position:relative !important;}
+[data-role=footer]{bottom:0; position:absolute !important; top: auto !important; width:100%; font-size: 40px !important;}  
+.ui-navbar li .ui-btn .ui-btn-inner {   
+    font-size: 40px !important;
+    border: 1px solid black;
+}
+.ui-field-contain .ui-controlgroup-controls{
+    width: 50% !important;
+    padding-left: 28% !important;
+}
+.ui-btn-text {
+    font-size:20px;
+}
+.ui-header>.ui-btn, .ui-footer>.ui-btn {
+    margin-top: 20px !important;
+}
+.ui-header .ui-title, .ui-footer .ui-title {
+    font-size: 35px !important;
+}
